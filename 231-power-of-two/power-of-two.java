@@ -1,13 +1,5 @@
-class Solution{
-    public boolean isPowerOfTwo(int n){
-        if (n<=0){
-            return false;
-        }
-        int result = n &(n-1);
-        if (result == 0){
-            return true;
-        }else{
-            return false;
-        }
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+    return n>0 && (n&(n-1))==0;
     }
 }
